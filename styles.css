@@ -19,6 +19,10 @@ li {
   margin:0;
 }
 
+.link {
+  text-decoration: none;
+  color: #1B1C21;
+}
 
 
 
@@ -227,7 +231,7 @@ li {
 /*-------------------aside-styles--------------------*/
 
 
-.mobile-menu {
+.aside {
   width: 320px;
   height: 100vh;
   z-index: 1;
@@ -254,7 +258,7 @@ li {
   margin-left:-26px;
 }
 
-.burger--close {
+.burger-close {
   width: 40px;
   height: 40px;
   border: none;
@@ -265,9 +269,10 @@ li {
   padding: 0;
 }
 
-.interactive--pointer:hover {
+.activintere--pointer:hover {
   cursor: pointer;
   opacity: 0.5;
+  transition: opacity 1s;
 }
 
 .interactive--pointer button,
@@ -342,11 +347,11 @@ label:hover {
   padding:0 0 32px 24px;
 }
 
-.language {
+.lang-block__language {
   display: inline-block;
   margin: 0;
 }
-.language > a {
+.lang-block__language > a {
   display: inline-block;
   text-decoration: none;
   color: #1B1C21;
@@ -354,7 +359,7 @@ label:hover {
   margin: 0;
 }
 
-.current-lang {
+.lang-block__language--current-lang {
   opacity: 0.6;
   pointer-events: none;
 }
@@ -363,6 +368,7 @@ label:hover {
   margin-left:16px;
   position: absolute;
   bottom: 80px;
+  font-style: normal;
 }
 
 .email {
